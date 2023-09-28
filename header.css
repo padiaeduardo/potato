@@ -42,7 +42,8 @@ position: relative;
    }
 
 .lista-menu__titulo{
-color: var(--laranja)
+color: var(--laranja);
+font-weight: 700;
 }
 
  .lista-menu__item {
@@ -58,3 +59,7 @@ background-clip: text;
 text-transform:uppercase
 
    }
+
+ .container__botao {
+  display: none;
+  }
