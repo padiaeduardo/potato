@@ -1,0 +1,92 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(carroussel.css);
+@import url(topicos.css);
+@import url(contato.css);
+@import url(rodape.css);
+
+:root {
+  --cor-de-fundo: #EBECEE;
+  --branco: #FFFFFF;
+  --preto: #000000;
+  --laranja: #C45300;
+  --azul: #002F52;
+  --cinza: #474646;
+  --cinza-claro: #676767;
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: "Poppins";
+  
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-principal);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+
+Tópicos 
+
+.topicos {
+  background: var(--azul-degrade);
+  padding: 2.4rem 1rem;
+  text-align: center;
+}
+
+.topicos_titulo {
+  color: var(--branco);
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+
+.topicos_lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.topicos_link {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  background: var(--laranja);
+  padding: 1.6rem 2.4rem;
+  display: inline-block;
+  transition: color .5s, background .5s;
+}
+
+.topicos_link:hover {
+  color: var(--laranja);
+  background: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+  .topicos_titulo, .topicos_link {
+    font-size: 2.4rem;
+  }
+
+  .topicos_lista {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .topicos {
+    padding: 4.8rem 0;
+  }
+
+  .topicos_lista {
+    max-width: 80rem;
+  }
+
+  .topicos_link {
+    padding: 2.4rem 3.2rem;
+  }
+}
+
